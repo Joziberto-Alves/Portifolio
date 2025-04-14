@@ -1,0 +1,14 @@
+html {
+    scroll-behavior: smooth; /* Habilita rolagem suave */
+}
+
+.profile-photo {
+    width: 200px;
+    height: 200px; 
+    border-radius: 50%; 
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto; 
+    display: block; 
+    object-fit: cover;
+}
