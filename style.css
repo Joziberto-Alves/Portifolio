@@ -12,3 +12,27 @@ html {
     display: block; 
     object-fit: cover;
 }
+#home{
+    height: 100vh !important;
+    background-size: cover; 
+    background-position: center;
+}
+.nav-item {
+    display: inline-block !important; /* Exibe os itens em linha */
+    margin: 0 15px; /* Espaçamento entre os itens */
+     font-size: 18px; /*Tamanho da fonte */
+    color: #333; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+.nav-item:hover {
+    color: #ffffff !important; /* Cor ao passar o mouse */
+}
+.navbar {
+    background-color: #333 !important; /* Cor de fundo da navbar */
+    padding: 10px 20px; /* Espaçamento interno */
+    position: fixed; /* Fixa a navbar no topo */
+    width: 100%; /* Largura total */
+    top: 0; /* Fixa no topo da página */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
