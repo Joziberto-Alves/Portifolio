@@ -36,3 +36,14 @@ html {
     top: 0; /* Fixa no topo da página */
     z-index: 1000; /* Garante que fique acima de outros elementos */
 }
+.navbar-brand {
+    font-size: 24px !important; /* Tamanho da fonte do título */
+    color: #fff; /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: color 0.3s ease; /* Transição suave para a cor */
+}
+#themeToggle {
+    background-color: transparent !important;
+    cursor: pointer;
+    color: #fff;
+}
