@@ -1,6 +1,8 @@
 # Portfólio
 
-Bem-vindo ao repositório do meu portfólio! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e informações pessoais de forma profissional e visualmente atraente.
+Este projeto é um portfólio pessoal desenvolvido com o objetivo de reunir e apresentar de forma clara e organizada minhas principais habilidades, tecnologias dominadas e projetos realizados.
+A proposta é criar uma interface responsiva, moderna e funcional, que permita aos visitantes conhecerem melhor meu perfil profissional, experiência com desenvolvimento web e meu progresso na área da programação.
+Além disso, o portfólio serve como um exercício prático de front-end, colocando em prática conceitos de HTML, CSS, Bootstrap, JavaScript e boas práticas de organização de código.
 
 ![Preview do Site](Portifolio.png)
 
@@ -39,7 +41,7 @@ Este portfólio foi criado como parte de uma avaliação de HTML, CSS e Bootstra
 
 Se você tiver alguma dúvida ou sugestão, sinta-se à vontade para entrar em contato comigo:
 
-- **Email**: seuemail@exemplo.com
+- **Email**: jozibertoalvesteixeirafilho@gmail.com
 - **LinkedIn**: (https://www.linkedin.com/in/joziberto-alves-735781360/)
 - **GitHub**: (https://github.com/Joziberto-Alves/)
 
