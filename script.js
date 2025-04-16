@@ -2,6 +2,7 @@ const themeToggle = document.getElementById('themeToggle');
 const body = document.body;
 const navbar = document.querySelector('.navbar');
 const heroSection = document.querySelector('.hero');
+const button =  document.getElementById('sobreLink');
 
 // Define o estilo inicial
 heroSection.style.backgroundImage = "url('fundo2.png')";
@@ -13,6 +14,9 @@ themeToggle.addEventListener('click', () => {
     body.classList.toggle('text-dark');
     navbar.classList.toggle('bg-dark');
     navbar.classList.toggle('bg-primary');
+    button.classList.toggle('btn-outline-light')
+    button.classList.toggle('btn-outline-dark')
+    
 
     const icon = themeToggle.querySelector('i');
     if (body.classList.contains('bg-dark')) {
@@ -27,3 +31,43 @@ themeToggle.addEventListener('click', () => {
         heroSection.style.backgroundImage = "url('fundo1.png')";
     }
 });
+
+// Adiciona um evento de clique ao documento
+// para fechar o menu quando clicar fora dele
+document.addEventListener("click", function (event) {
+    const navbar = document.querySelector(".navbar-collapse");
+    const isClickInsideNavbar = navbar.contains(event.target);
+    const isNavbarExpanded = navbar.classList.contains("show");
+    // Mudar o foco da página ao clickar no link do navbar
+    if (!isClickInsideNavbar && isNavbarExpanded) {
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+        toggle: true
+    });
+    }
+});
+
+// Adiciona um evento de clique a cada link do navbar
+// para fechar o menu quando um link é clicado
+const navbarLinks = document.querySelectorAll('.navbar-collapse .nav-link');
+
+navbarLinks.forEach(link => {
+    link.addEventListener('click', () => {
+        const navbar = document.querySelector('.navbar-collapse');
+        if (navbar.classList.contains('show')) { // Verifica se o menu está aberto
+            const bsCollapse = new bootstrap.Collapse(navbar, {
+                toggle: true
+            });
+        }
+    });
+});
+
+// Inclui o botão que muda a cor
+themeToggle.addEventListener('click', () => {
+    const navbar = document.querySelector('.navbar-collapse');
+    if (navbar.classList.contains('show')) { // Verifica se o menu está aberto
+        const bsCollapse = new bootstrap.Collapse(navbar, {
+            toggle: true
+        });
+    }
+});
+
